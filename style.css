@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+body {
+    margin: 0;
+    background-color: rgb(255, 179, 48);
+}
+#main {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 350px;
+}
+#reset, #clear, #rainbow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    border: 1px solid black;
+}
+#reset:hover{
+    background-color: rgb(57, 92, 200);
+}
+#reset {
+    background-color: royalblue;
+}
+#clear {
+    background-color: red;
+}
+#clear:hover {
+    background-color: rgb(228, 43, 43);
+}
+#rainbow {
+    background-color: plum;
+}
+#rainbow:hover{
+    background-color: rgb(187, 132, 187);
+}
+.iconBtn {
+    pointer-events: none;
+}
+#sketchPad {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.grid-square {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+footer {
+    text-align: center;
+}
+#logo {
+    width: 30px;
+    height: 30px;
+}
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+#gitHubIcon {
+ transform: scale(1.5);
+}
