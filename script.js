@@ -45,3 +45,8 @@ function clearGrid(e) {
     let gridBox = document.querySelectorAll('.grid-square');
     gridBox.forEach(box => box.style.backgroundColor = "rgb(255,255,255)");
 }
+
+window.onload = createGrid(16);
+document.addEventListener('mouseover', hoverFunction);
+document.addEventListener('click', resetGrid);
+document.addEventListener('click', clearGrid);
