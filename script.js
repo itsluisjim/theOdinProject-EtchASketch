@@ -15,3 +15,13 @@ function createGrid(width) {
         container.appendChild(box);
     }
 }
+
+function hoverFunction(e) {
+    if(!e.target.classList.contains('grid-square')) return;
+    let str = e.target.style.backgroundColor
+    var vals = str.substring(str.indexOf('(') +1, str.length -1).split(', ');
+    if(vals[0]==0) return; 
+    let decreaseBy = 255/10;
+
+    e.target.style.backgroundColor = `rgb(${vals[0]-decreaseBy},${vals[0]-decreaseBy},${vals[0]-decreaseBy})`
+}
