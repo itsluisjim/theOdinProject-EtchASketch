@@ -39,3 +39,9 @@ function resetGrid(e) {
     }    
     createGrid(width);
 }
+
+function clearGrid(e) {
+    if(!(e.target.id =='clear')) return;
+    let gridBox = document.querySelectorAll('.grid-square');
+    gridBox.forEach(box => box.style.backgroundColor = "rgb(255,255,255)");
+}
